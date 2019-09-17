@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" href="slick/slick.css">
+   <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 
 <body>
@@ -290,13 +292,20 @@
    			<section class="brend">
 								 <div class="container">
 								 	<div class="row">
-								 		<div class="col-md-11 offset-md-1">
-								 	 <img src="img/brend/partner1.jpg">
-									<img src="img/brend/partner2.jpg">
-									<img src="img/brend/partner3.jpg">
-								  <img src="img/brend/partner4.jpg">
-								  <img src="img/brend/partner5.jpg">
-								  <img src="img/brend/partner6.jpg">
+								 		<div class="col-md-8 offset-md-2">
+								 	 <div class="im">
+								 	 	<img src="img/brend/partner1.jpg">
+									    <img src="img/brend/partner2.jpg">
+									    <img src="img/brend/partner3.jpg">
+								        <img src="img/brend/partner4.jpg">
+								        <img src="img/brend/partner5.jpg">
+								        <img src="img/brend/partner6.jpg">
+								        <img src="img/brend/partner7.jpg">
+								        <img src="img/brend/partner8.jpg">
+								        <img src="img/brend/partner9.png">
+								        <img src="img/brend/partner10.png">
+								        <img src="img/brend/partner11.png">
+								 	 </div>
 								 </div>
 								 	</div>
 								 </div>
@@ -370,7 +379,7 @@
    							<p> 	&copy; 2014 Fashion Store. All Rights Reserved.</p>
    						</div>
    						<div class="col-md-6 offset-1">
-   							<img src="img/pay/pay1.jpg" alt="">
+							<img src="img/pay/pay1.jpg" alt="">
    							<img src="img/pay/pay2.jpg" alt="">
    							<img src="img/pay/pay3.jpg" alt="">
 							<img src="img/pay/pay4.jpg" alt="">
@@ -378,7 +387,7 @@
 							<img src="img/pay/pay6.jpg" alt="">
 							<img src="img/pay/pay7.jpg" alt="">
 							<img src="img/pay/pay8.jpg" alt="">
-   						</div>
+						</div>
    					</div>
    				</div>
    			</section>
@@ -386,10 +395,22 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
+<script>
+	$(document).ready(function(){
+  $('.im').slick({
+  infinite: true,
+  slidesToShow: 7,
+  slidesToScroll: 7,
+	   prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+  });
+});
+	</script>
 </body>
 </html>
